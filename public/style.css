@@ -1,0 +1,269 @@
+/* Simple Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #60e6c7;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    color: #2c3e50;
+    font-size: 32px;
+}
+
+.tagline {
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+/* Status Box */
+.status-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.status-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+#serverStatus {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* Form Box */
+.form-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.form-box h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #2980b9;
+}
+
+/* Summary Cards */
+.summary {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #7f8c8d;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card .amount {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Expense Box */
+.expense-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.expense-box h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#expenseList {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.empty-msg {
+    text-align: center;
+    color: #95a5a6;
+    padding: 30px;
+}
+
+.expense-item {
+    padding: 15px;
+    border: 1px solid #ecf0f1;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expense-item:hover {
+    background: #f8f9fa;
+}
+
+.expense-info h4 {
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.expense-info p {
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+.expense-right {
+    text-align: right;
+}
+
+.expense-amount {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498db;
+    margin-bottom: 5px;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+/* Demo Box */
+.demo-box {
+    background: #fff3cd;
+    padding: 25px;
+    border-radius: 10px;
+    border: 2px solid #ffc107;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.demo-box h2 {
+    color: #856404;
+    margin-bottom: 10px;
+}
+
+.demo-box p {
+    color: #856404;
+    margin-bottom: 15px;
+}
+
+.demo-btn {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.demo-btn:hover {
+    background: #f57c00;
+}
+
+#testResult {
+    margin-top: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #ffc107;
+    display: none;
+}
+
+#testResult.show {
+    display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    .summary {
+        flex-direction: column;
+    }
+    
+    .expense-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .expense-right {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
