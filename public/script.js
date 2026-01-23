@@ -1,6 +1,6 @@
 // Global variables
 let expenses = [];
-const API_URL = '/api';
+const API_URL = 'http://localhost:5000/api';
 
 // When page loads
 window.onload = function() {
