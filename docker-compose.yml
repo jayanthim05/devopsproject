@@ -6,7 +6,7 @@ services:
     ports:
       - "5000-5002:3000"
     deploy:
-      replicas: 3  # Ithu thaan high traffic-ah handle panna ponom
+      replicas: 3  # handle high traffic
       resources:
         limits:
           cpus: '0.5'
